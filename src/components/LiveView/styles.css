@@ -1,0 +1,17 @@
+.live-view {
+    flex: 1;
+    border: 1px solid #a9d6e5;
+}
+
+.live-view__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: #01497c;
+    color: white;
+}
+
+.live-view__header span {
+    font-weight: bold;
+}

@@ -1,0 +1,25 @@
+.code-editor {
+  /* flex: 1; */
+  min-width: 40vw;
+  border: 1px solid #a9d6e5;
+  overflow: auto;
+  resize: horizontal;
+}
+
+.code-editor__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: #01497c;
+  color: white;
+}
+
+.CodeMirror {
+  min-height: calc(100vh - 43px);
+}
+
+.hidden {
+  display: none;
+}
+
