@@ -5,7 +5,6 @@ import CodeEditor from "./components/CodeEditor/CodeEditor";
 import LiveView from "./components/LiveView/LiveView";
 
 import "./App.css";
-import "prismjs";
 
 const App = () => {
   const fileStatus = {
@@ -84,7 +83,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="App__container">
-        <FileExplorer files={files} func={handleVisible} />
+        <FileExplorer files={files} func={handleVisible} codeToPaste={srcDoc} />
         <CodeEditor
           editorTitle={files[0].fileName}
           language={files[0].language}

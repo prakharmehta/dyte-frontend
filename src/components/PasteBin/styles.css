@@ -1,0 +1,19 @@
+.paste-bin {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paste-bin button{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 90%;
+    margin: auto;
+}
