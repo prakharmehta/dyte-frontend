@@ -1,13 +1,22 @@
 import React, { useState } from "react";
+
+//Axios for API calling
 import axios from 'axios'
+
+//CSS
 import './styles.css'
 
+//Interface specifying the props the component requires
 interface PasteBinProps {
     codeToPaste: string
 }
 
 const PasteBin: React.FC<PasteBinProps> = ({ codeToPaste }) => {
+
+    //State hook to update the url with the response
     const [url, setUrl] = useState('');
+
+    //State hook to update the error with the error msg
     const [errorMsg, setErrorMsg] = useState('');
 
     const pasteHandler = async () => {
