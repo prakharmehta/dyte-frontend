@@ -31,6 +31,7 @@ const PasteBin: React.FC<PasteBinProps> = ({ codeToPaste }) => {
     return (
         <div className="paste-bin">
             <button onClick={pasteHandler}>Generate Link</button>
+            <br />
             <span>{url || errorMsg}</span>
         </div>
         
